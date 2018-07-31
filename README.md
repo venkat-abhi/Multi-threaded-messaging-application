@@ -17,3 +17,13 @@ To view the all the servers running and their information (state, port, etc.), r
 
 
     netstat -atp
+    
+## Client
+The client connects to the server running on port 9000. It also spawns two threads (one receiver, and one 
+sender). Both the threads utitilize the communication socket to send and recieve.
+
+### Note
+
+
+    The Server and client automatically assign the IP address of the system on which they are running since the ai_flags is set to
+    AI_PASSIVE. To specify a particular IP address, modify this parameter and set the IP address in getaddrinfo call.
