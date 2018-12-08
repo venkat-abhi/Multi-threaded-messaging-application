@@ -1,5 +1,5 @@
 # Multi-threaded-messaging-application (Utilizes Pthreads to send and receive messages in parallel)
-I Wanted to learn how to create a basic client server application and came up with this. 
+I Wanted to learn how to use sockets and as the first step, I came up with this. 
 ## Server
 The server listens on the port 9000 for incoming connections and then connects to them. It then spawns two threads (one receiver, and one 
 sender). Both the threads utitilize the communication socket to send and recieve. 
